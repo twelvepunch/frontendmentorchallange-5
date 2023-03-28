@@ -1,0 +1,124 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Main-BG: hsl(217, 54%, 11%);
+  --card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: var(--Main-BG);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Soft-blue);
+}
+
+.container {
+  position: relative;
+  width: 336px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-BG);
+  padding: 20px;
+
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.view-icon {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 50%);
+  width: 90%;
+  opacity: 1;
+  height: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.imgbox {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.imgbox:hover .view-icon {
+  visibility: visible;
+}
+.descp a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--White);
+}
+.descp a:hover {
+  color: var(--Cyan);
+}
+.descp p {
+  margin-top: 10px;
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+.worth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.worth .eth {
+  display: flex;
+  color: var(--Cyan);
+}
+.eth-ico {
+  margin-right: 10px;
+}
+.time-ico {
+  margin-right: 10px;
+}
+.worth .time {
+  display: flex;
+  color: var(--soft-dark-blue);
+}
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  font-size: 16px;
+  margin-left: 16px;
+}
+.footer-text {
+  color: var(--Soft-blue);
+  margin-left: 10px;
+  font-weight: 300;
+}
+.footer-text a {
+  color: var(--White);
+  font-weight: 400;
+}
+.footer-text a:hover {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.avatar {
+  border: 1px solid var(--White);
+  border-radius: 9999px;
+}
+.avatar img {
+  width: 32px;
+}
